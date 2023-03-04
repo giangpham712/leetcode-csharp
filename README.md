@@ -1,2 +1,3 @@
-# leetcode-csharp
-Solutions for LeetCode problems in C#
+# Data Structures & Algorithms in C#
+
+Implementation of data structures & algorithms, solutions for LeetCode problems in C#
