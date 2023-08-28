@@ -12,7 +12,7 @@ public class UnitTest1
     }
 
     [Theory]
-    [MemberData(nameof(ConstructBinaryTreeTestData))]
+    [MemberData(nameof(CreateTestData))]
     public void ConstructBinaryTree(int[] values, TreeNode expected)
     {
         var actual = Utils.ConstructBinaryTree(values);
@@ -20,7 +20,7 @@ public class UnitTest1
         
     }
 
-    public static IEnumerable<object[]> ConstructBinaryTreeTestData()
+    public static IEnumerable<object[]> CreateTestData()
     {
         {
             var values = new[] { 25, 15, 50, 10, 22, 35, 70, 4, 12, 18, 24, 31, 44, 66, 90 };
