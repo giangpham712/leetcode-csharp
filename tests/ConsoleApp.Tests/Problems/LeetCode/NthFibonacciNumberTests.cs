@@ -1,4 +1,4 @@
-namespace ConsoleApp.Tests.Problems;
+namespace ConsoleApp.Tests.Problems.LeetCode;
 
 public class NthFibonacciNumberTests
 {

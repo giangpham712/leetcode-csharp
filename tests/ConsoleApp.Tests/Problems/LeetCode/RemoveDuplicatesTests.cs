@@ -1,6 +1,6 @@
 ﻿using ConsoleApp.Problems.LeetCode;
 
-namespace ConsoleApp.Tests.Problems;
+namespace ConsoleApp.Tests.Problems.LeetCode;
 
 public class RemoveDuplicatesTests
 {
