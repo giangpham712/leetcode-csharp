@@ -1,12 +1,12 @@
 ﻿namespace ConsoleApp.Problems.LeetCode.Problem;
 
-public class Test
+public class ProblemTest
 {
     [Theory]
     [InlineData(default, default)]
     public void TestSolve(object input, object expected)
     {
-        var solution = new Solution();
+        var solution = new ProblemSolution();
         var actual = solution.Solve(input);
 
         Assert.Equal(expected, actual);

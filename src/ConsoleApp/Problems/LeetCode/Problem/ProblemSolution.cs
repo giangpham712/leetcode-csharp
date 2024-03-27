@@ -1,6 +1,6 @@
 ﻿namespace ConsoleApp.Problems.LeetCode.Problem;
 
-public class Solution
+public class ProblemSolution
 {
     public object Solve(object input)
     {

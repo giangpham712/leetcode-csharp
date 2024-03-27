@@ -2,7 +2,7 @@
 
 namespace ConsoleApp.Problems.LeetCode.FirstMissingPositive;
 
-public class Test
+public class FindMissingPositiveTest
 {
     [Theory]
     [InlineData(new int[] { 1, 2, 0 }, 3)]
@@ -12,7 +12,7 @@ public class Test
     [InlineData(new int[] { 1,1 }, 2)]
     public void TestSolve(int[] nums, int expected)
     {
-        var solution = new Solution();
+        var solution = new FindMissingPositiveSolution();
         var actual = solution.Solve(nums);
         
         Assert.Equal(expected, actual);

@@ -1,6 +1,6 @@
 ﻿namespace ConsoleApp.Problems.LeetCode.FirstMissingPositive;
 
-public class Solution
+public class FindMissingPositiveSolution
 {
     public int Solve(int[] nums)
     {
