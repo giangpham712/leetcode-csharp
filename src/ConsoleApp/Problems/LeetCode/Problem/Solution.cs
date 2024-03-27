@@ -2,5 +2,8 @@
 
 public class Solution
 {
-    
+    public object Solve(object input)
+    {
+        return default;
+    }
 }
