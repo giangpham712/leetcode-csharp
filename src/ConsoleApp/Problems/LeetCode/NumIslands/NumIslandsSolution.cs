@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp.Problems.LeetCode.Problem;
+﻿namespace ConsoleApp.Problems.LeetCode.NumIslands;
 
 public class NumIslandsSolution
 {
