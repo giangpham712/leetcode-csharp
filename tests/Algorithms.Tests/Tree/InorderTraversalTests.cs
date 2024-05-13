@@ -6,6 +6,5 @@ public class InorderTraversalTests
 {
     public void Traverse(TreeNode root)
     {
-        
     }
 }
