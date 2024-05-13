@@ -11,4 +11,11 @@ public class ProblemTest
 
         Assert.Equal(expected, actual);
     }
+
+    private static IEnumerable<object[]> TestData()
+    {
+        yield return new object[]
+        {
+        };
+    }
 }
