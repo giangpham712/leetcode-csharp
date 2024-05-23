@@ -1,7 +1,11 @@
 ﻿using DataStructures.LeetCode;
 
-namespace ConsoleApp.Problems.LeetCode.BinaryTreeInorderTraversal;
+namespace ConsoleApp.Problems.LeetCode.BinaryTree.InorderTraversal;
 
+/*
+ * Recursive solution
+
+ */
 public class BinaryTreeInorderTraversalSolution
 {
     public IList<int> Solve(TreeNode? root)

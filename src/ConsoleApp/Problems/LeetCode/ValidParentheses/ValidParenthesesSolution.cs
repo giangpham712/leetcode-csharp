@@ -1,8 +1,9 @@
-namespace ConsoleApp.Problems.LeetCode;
+﻿namespace ConsoleApp.Problems.LeetCode.ValidParentheses;
 
-public class ValidParentheses
+public class ValidParenthesesSolution
 {
-    public bool Solve(string s) {
+    public bool Solve(string s)
+    {
         var stack = new char[s.Length];
         var head = 0;
         foreach (var c in s) {
@@ -24,6 +25,5 @@ public class ValidParentheses
             }
         }
         return head == 0;
-
     }
 }
