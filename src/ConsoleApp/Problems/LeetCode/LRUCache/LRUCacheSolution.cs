@@ -4,7 +4,11 @@ public class LRUCacheSolution
 {
     private readonly int _capacity;
     private readonly IDictionary<int, LRUCacheItem> _data;
+    
+    // head of double linked list
     private LRUCacheItem? _leastRecent;
+    
+    // tail of double linked list
     private LRUCacheItem? _mostRecent;
 
     public LRUCacheSolution(int capacity) {

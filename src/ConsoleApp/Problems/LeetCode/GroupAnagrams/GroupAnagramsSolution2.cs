@@ -1,4 +1,6 @@
-﻿namespace ConsoleApp.Problems.LeetCode.GroupAnagrams;
+﻿using System.Text;
+
+namespace ConsoleApp.Problems.LeetCode.GroupAnagrams;
 
 public class GroupAnagramsSolution2
 {
@@ -24,15 +26,15 @@ public class GroupAnagramsSolution2
             map[_letterDict[str[i]]]++;
         }
         
-        var hash = "";
+        var hash = new StringBuilder();
         for (var i = 0; i < map.Length; i++) 
         {
             if (map[i] > 0)
             {
-                hash += $"{i}:{map[i]}_";
+                hash.Append($"{i}:{map[i]}_");
             }    
         }
         
-        return hash;
+        return hash.ToString();
     }
 }

@@ -44,3 +44,7 @@ Explanation:
 ### Solution:
 
 - Use Greedy approach with a priority queue
+- Use a priority queue to rank the letters by highest occurence
+- We dequeue the letter with the highest occurence
+- Add it to the result string if that doesn't violate the rule then decrease its occurence and re-enqueue (if not 0)
+  If it violates the rule, pick the next one to add and decrease its occurence, then re-enqueue both (if not 0)

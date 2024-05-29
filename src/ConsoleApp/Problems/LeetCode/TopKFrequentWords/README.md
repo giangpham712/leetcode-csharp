@@ -26,4 +26,10 @@ Explanation:
 -
 
 
-Follow up: 
+### Solution:
+
+- Iterate the list to count the frequencies of words
+- Use bucket sorting
+  - initialize an array of priority queues, the size of the array is the max frequency
+  - assign words to the buckets, they will be sorted lexicographically by the priority queue
+- Iterate the buckets and pick the top `k`

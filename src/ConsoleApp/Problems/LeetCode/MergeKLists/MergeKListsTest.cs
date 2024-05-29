@@ -28,6 +28,31 @@ public class MergeKListsTest
 
         actual.ToArray().Should().BeEquivalentTo(output);
     }
+    
+    [Theory]
+    [MemberData(nameof(TestData))]
+    public void TestSolve2(int[][] input, int[] output)
+    {
+        var lists = new List<ListNode>();
+
+        foreach (var arr in input)
+        {
+            if (!arr.Any())
+            {
+                lists.Add(null);
+            }
+            else
+            {
+                var head = CreateListNode(arr);
+                lists.Add(head);
+            }
+        }
+        
+        var solution = new MergeKListsSolution2();
+        var actual = solution.Solve(lists.ToArray());
+
+        actual.ToArray().Should().BeEquivalentTo(output);
+    }
 
     private ListNode CreateListNode(int[] arr)
     {

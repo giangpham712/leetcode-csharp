@@ -12,17 +12,17 @@ public class ReverseLinkedListSolution
             return null;
         }
         
-        var tail = ReverseNext(head, head.next);
+        var tail = ReverseNext(head);
         head.next = null;
         return tail;
     }
 
-    private ListNode ReverseNext(ListNode node, ListNode? nextNode)
+    private ListNode ReverseNext(ListNode node)
     {
-        if (nextNode != null)
+        if (node != null && node.next != null)
         {
-            var tail = ReverseNext(nextNode, nextNode.next);
-            nextNode.next = node;
+            var tail = ReverseNext(node.next);
+            node.next.next = node;
             return tail;
         }
 

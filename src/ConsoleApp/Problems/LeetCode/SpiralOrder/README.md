@@ -26,4 +26,11 @@ Explanation:
 -
 
 
-Follow up: 
+### Solution:
+
+- Traverse 
+  - left to right
+  - top to bottom
+  - right to left
+  - bottom to top
+  - the number of vertical and horizontal steps to traverse decreases by 1 after each change of direction

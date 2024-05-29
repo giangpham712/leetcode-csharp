@@ -25,5 +25,7 @@ Explanation:
 
 -
 
+### Solution:
 
-Follow up: 
+- Use backtracking
+- Use a map to store the mappings from number to letters

@@ -30,4 +30,8 @@ Explanation:
 -
 
 
-Follow up: 
+### Solution:
+
+- Use a while loop to iterate both linked list
+  - Calculate the sum of each pair of nodes
+  - Use a boolean to track if we need to pass 1 to the next sum

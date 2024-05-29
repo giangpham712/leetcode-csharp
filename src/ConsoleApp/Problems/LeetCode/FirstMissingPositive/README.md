@@ -29,3 +29,21 @@ Explanation: The smallest positive integer 1 is missing.
 
 - 1 <= nums.length <= 105
 - -231 <= nums[i] <= 231 - 1
+
+### Solution:
+
+#### O(n) time and O(1) space:
+
+- Use the input array to track progress
+- Iterate the array and set all numbers that are negative or greater than the size of the array
+- Iterate the array again, if the absolute value of a number `x` at index `i` is positive, set the value at index `x - 1` to 
+  - 0 if the value at index `x-1` which is `nums[x - 1]` is 0
+  - else, `-abs(nums[x - 1])` if `nums[x - 1]`
+- Iterate the array for the last time, 
+  - for the first number `x` at index `i` where `x` is not negative, return `i + 1`
+  - if not found, return `len(nums) + 1`
+
+#### O(n) time and O(n) space:
+
+- Add a numbers into a set (or hash map)
+- Iterate from 1 to n, return the value if it's missing from the set

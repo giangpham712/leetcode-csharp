@@ -30,4 +30,9 @@ Explanation:
 -
 
 
-Follow up: 
+### Solution:
+
+- Implement a hashing function to hash a string so that strings that have the same letters can be grouped together
+- The hashing function 
+  - use an array of size 26 to track the frequencies of the letter
+  - iterate the array to generate a string 

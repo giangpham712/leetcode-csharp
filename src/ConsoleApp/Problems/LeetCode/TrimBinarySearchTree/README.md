@@ -25,3 +25,10 @@ Output: [3,2,null,1]
 - root is guaranteed to be a valid binary search tree.
 - 0 <= low <= high <= 104
 
+
+### Solution:
+
+- Use recursion to implement divide and conquer
+- If the lower bound is larger than current node value, we should only trim the right subtree then return the top node as the new root
+- If the higher bound is smaller than current node value, we should only trim the left subtree then return the top node as the new root
+- If the current node value is between the lower bound and upper bound, we need to trim both sides

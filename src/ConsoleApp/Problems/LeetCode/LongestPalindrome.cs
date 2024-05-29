@@ -1,5 +1,9 @@
 ﻿namespace ConsoleApp.Problems.LeetCode;
 
+/*
+ * 
+ * 
+ */
 public class LongestPalindrome
 {
     public string Solve(string s)

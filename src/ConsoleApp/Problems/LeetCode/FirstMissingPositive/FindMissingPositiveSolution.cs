@@ -1,9 +1,13 @@
 ﻿namespace ConsoleApp.Problems.LeetCode.FirstMissingPositive;
 
+/*
+ * 
+ */
 public class FindMissingPositiveSolution
 {
     public int Solve(int[] nums)
     {
+        // Set any number that is negative or larger than n to zero
         for (var i = 0; i < nums.Length; i++)
         {
             var num = nums[i];

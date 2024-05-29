@@ -37,3 +37,26 @@ lRUCache.get(4);    // return 4
 - 0 <= key <= 104
 - 0 <= value <= 105
 - At most 2 * 105 calls will be made to get and put.
+
+### Solution
+
+- Use a dictionary to store the cache item by key
+- Use a double linked list to track the last recently used cache entry where 
+  - the node at head is the last recently used, and 
+  - the tail is the most recently used
+  
+- The `Get` method
+  - if the key doesn't exist, return `-1`
+  - if the key exists
+    - remove the node from the linked list
+    - add the node back to the tail
+    - return the value
+    
+- The `Put` method
+  - if the key doesn't exist, 
+    - add it to the tail
+    - if the capacity has been exceeded, remove the last recently used node
+  - if the key exist
+    - remove it from the linked list
+    - update its value
+    - add it back to the tail

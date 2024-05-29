@@ -6,6 +6,7 @@ public class LongestHappyStringSolution
     {
         var result = "";
 
+        // Use a priority queue to rank the letters by highest occurence
         var queue = new PriorityQueue<char, int>(new CountComparer());
 
         if (a > 0)
@@ -23,8 +24,11 @@ public class LongestHappyStringSolution
             queue.Enqueue('c', c);
         }
 
+        // We dequeue the letter with the highest occurence
         while (queue.TryDequeue(out var letter, out var letterCount))
         {
+            // Add it to the result string if that doesn't violate the rule then decrease its occurence and re-enqueue (if not 0)
+            // If it violates the rule, pick the next one to add and decrease its occurence, then re-enqueue both (if not 0)
             if (result.Length >= 2 && 
                 result[result.Length - 1] == result[result.Length - 2] &&
                 result[result.Length - 1] == letter)
@@ -41,6 +45,7 @@ public class LongestHappyStringSolution
                 }
                 else
                 {
+                    // If it's not possible to add more letter, stop here
                     break;
                 }
             }

@@ -1,6 +1,6 @@
 namespace ConsoleApp.Problems.LeetCode;
 
-public class NumberToWords
+public class IntegerToEnglishWordsSolution2
 {
     public string Solve(int num)
     {

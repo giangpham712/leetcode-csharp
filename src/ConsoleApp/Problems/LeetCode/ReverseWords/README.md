@@ -26,4 +26,8 @@ Explanation:
 -
 
 
-Follow up: 
+### Solution:
+
+#### Use two pointers
+
+- 

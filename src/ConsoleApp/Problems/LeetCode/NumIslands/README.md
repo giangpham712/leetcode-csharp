@@ -30,4 +30,9 @@ Explanation:
 -
 
 
-Follow up: 
+### Solution:
+
+- Iterate the matrix
+- Use recursion to expand from one cell to its adjacent cells
+  - When we start at a new node, use its coordinate as the key for the island and for the expansion
+  - Update the value of a cell to `0` to mark it as visited

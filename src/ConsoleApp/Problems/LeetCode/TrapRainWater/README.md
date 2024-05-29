@@ -20,3 +20,9 @@ Output: 9
 - n == height.length
 - 1 <= n <= 2 * 104
 - 0 <= height[i] <= 105
+
+### Solution:
+- Observation: The trapped water level at an index is the min of its left highest bar and right highest bar
+- We use two arrays to keep track of the highest bar to the left and highest bar to the right at each index
+- Iterate the list and for each index, keep track of the highest bars on its left and right
+- Iterate the list again to calculate and sum up the water level

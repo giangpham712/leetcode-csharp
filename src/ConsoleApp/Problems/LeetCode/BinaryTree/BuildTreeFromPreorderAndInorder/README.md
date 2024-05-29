@@ -26,4 +26,12 @@ Explanation:
 -
 
 
-Follow up: 
+### Solution:
+
+#### Use recursion
+
+- The first value in the `preorder` list is the root
+- In the inorder list
+  - values that are on the left side of the root value belongs to the left subtree 
+  - values that are on the right side of the root value belongs to the right subtree
+- 
