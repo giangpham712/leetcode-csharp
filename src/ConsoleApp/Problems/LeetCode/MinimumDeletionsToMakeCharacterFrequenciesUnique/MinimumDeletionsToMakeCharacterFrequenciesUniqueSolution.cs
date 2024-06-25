@@ -27,7 +27,6 @@ public class MinimumDeletionsToMakeCharacterFrequenciesUniqueSolution
             {
                 prev = Math.Max(0, prev - 1);
                 toRemove += frequency - prev;
-                
             }
             else
             {
