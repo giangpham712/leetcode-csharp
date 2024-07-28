@@ -33,12 +33,12 @@ public class WordSearch
             word = string.Join("", word.Reverse());
         }
         
-        var tracked = new HashSet<string>();
+        
         for (var i = 0; i < board.Length; i++)
         {
             for (var j = 0; j < board[0].Length; j++)
             {
-                var check = BackTrack(board, word, i, j, new HashSet<int>(), tracked);
+                var check = BackTrack(board, word, i, j, new HashSet<int>());
                 if (check)
                 {
                     return true;
@@ -49,7 +49,7 @@ public class WordSearch
         return false;
     }
 
-    private bool BackTrack(char[][] board, string word, int x, int y, HashSet<int> visited, HashSet<string> tracked)
+    private bool BackTrack(char[][] board, string word, int x, int y, HashSet<int> visited)
     {
         if (x < 0 || x >= board.Length || y < 0 || y >= board[0].Length)
         {
@@ -66,10 +66,10 @@ public class WordSearch
         return word[0] == board[x][y] && 
                (
                    word.Length == 1 ||
-                   BackTrack(board, word.Substring(1), x - 1, y, new HashSet<int>([.. visited, key]), tracked) ||
-                   BackTrack(board, word.Substring(1), x + 1, y, new HashSet<int>([.. visited, key]), tracked) ||
-                   BackTrack(board, word.Substring(1), x, y - 1, new HashSet<int>([.. visited, key]), tracked) ||
-                   BackTrack(board, word.Substring(1), x, y + 1, new HashSet<int>([.. visited, key]), tracked)
+                   BackTrack(board, word.Substring(1), x - 1, y, new HashSet<int>([.. visited, key])) ||
+                   BackTrack(board, word.Substring(1), x + 1, y, new HashSet<int>([.. visited, key])) ||
+                   BackTrack(board, word.Substring(1), x, y - 1, new HashSet<int>([.. visited, key])) ||
+                   BackTrack(board, word.Substring(1), x, y + 1, new HashSet<int>([.. visited, key]))
                );
     }
 }
