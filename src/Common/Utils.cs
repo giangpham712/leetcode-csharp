@@ -1,4 +1,6 @@
-﻿namespace Common;
+﻿using DataStructures.LeetCode;
+
+namespace Common;
 
 public static class Utils
 {

@@ -1,6 +1,4 @@
-﻿using ConsoleApp.Problems.LeetCode.Problem;
-
-namespace ConsoleApp.Problems.LeetCode.FindTheCelebrity;
+﻿namespace ConsoleApp.Problems.LeetCode.FindTheCelebrity;
 
 public class FindTheCelebrityTest
 {

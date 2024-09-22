@@ -1,4 +1,4 @@
-using Common;
+using DataStructures.LeetCode;
 
 namespace Algorithms.Tree;
 

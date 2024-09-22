@@ -1,6 +1,4 @@
-﻿using ConsoleApp.Problems.LeetCode.Problem;
-
-namespace ConsoleApp.Problems.LeetCode.MaxAreaOfIsland;
+﻿namespace ConsoleApp.Problems.LeetCode.MaxAreaOfIsland;
 
 public class MaxAreaOfIslandTest
 {

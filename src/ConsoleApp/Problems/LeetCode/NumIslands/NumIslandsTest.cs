@@ -1,6 +1,4 @@
-﻿using ConsoleApp.Problems.LeetCode.Problem;
-
-namespace ConsoleApp.Problems.LeetCode.NumIslands;
+﻿namespace ConsoleApp.Problems.LeetCode.NumIslands;
 
 public class NumIslandsTest
 {

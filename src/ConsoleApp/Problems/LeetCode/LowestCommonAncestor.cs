@@ -1,4 +1,5 @@
 using Common;
+using DataStructures.LeetCode;
 
 namespace ConsoleApp.Problems.LeetCode;
 
@@ -8,8 +9,8 @@ public class LowestCommonAncestor
     {
         if (root == null || root == p || root == q) return root;
         
-        var left = Solve(root.Left, p, q);
-        var right = Solve(root.Right, p, q);
+        var left = Solve(root.left, p, q);
+        var right = Solve(root.right, p, q);
         
         if (left == null) return right;
         if (right == null) return left;

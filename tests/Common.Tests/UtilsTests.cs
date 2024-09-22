@@ -1,3 +1,5 @@
+using DataStructures.LeetCode;
+
 namespace Common.Tests;
 
 public class UnitTest1
@@ -25,20 +27,20 @@ public class UnitTest1
         {
             var values = new[] { 25, 15, 50, 10, 22, 35, 70, 4, 12, 18, 24, 31, 44, 66, 90 };
             var root = new TreeNode(25);
-            root.Left = new TreeNode(15);
-            root.Right = new TreeNode(50);
-            root.Left.Left = new TreeNode(10);
-            root.Left.Right = new TreeNode(22);
-            root.Right.Left = new TreeNode(35);
-            root.Right.Right = new TreeNode(70);
-            root.Left.Left.Left = new TreeNode(4);
-            root.Left.Left.Right = new TreeNode(12);
-            root.Left.Right.Left = new TreeNode(18);
-            root.Left.Right.Right = new TreeNode(24);
-            root.Right.Left.Left = new TreeNode(31);
-            root.Right.Left.Right = new TreeNode(44);
-            root.Right.Right.Left = new TreeNode(66);
-            root.Right.Right.Right = new TreeNode(90);
+            root.left = new TreeNode(15);
+            root.right = new TreeNode(50);
+            root.left.left = new TreeNode(10);
+            root.left.right = new TreeNode(22);
+            root.right.left = new TreeNode(35);
+            root.right.right = new TreeNode(70);
+            root.left.left.left = new TreeNode(4);
+            root.left.left.right = new TreeNode(12);
+            root.left.right.left = new TreeNode(18);
+            root.left.right.right = new TreeNode(24);
+            root.right.left.left = new TreeNode(31);
+            root.right.left.right = new TreeNode(44);
+            root.right.right.left = new TreeNode(66);
+            root.right.right.right = new TreeNode(90);
             
             yield return new object[]
             {
